@@ -13,9 +13,8 @@ int main()
             printf("%d\n",i);
         }
     }
-    FILE *arq = fopen("C:/Users/Luana/Downloads/PUC 2026/Github/AEDs 1/lista06/arquivo6.txt","w");
+    FILE *arq = fopen("arquivo6.txt","w");
     fprintf(arq,"%d",soma);
-    free(arq);
     fclose(arq);
     return 0;
 }

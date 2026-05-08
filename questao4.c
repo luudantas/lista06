@@ -4,7 +4,7 @@
 int main()
 {
     int x, cont = 1;
-    FILE *arq = fopen("C:/Users/Luana/Downloads/PUC 2026/Github/AEDs 1/lista06/arquivo4.txt","r");
+    FILE *arq = fopen("arquivo4.txt","r");
     while((x=fgetc(arq))!=EOF)
     {
         printf("%c",(char)x);
@@ -13,6 +13,5 @@ int main()
     printf("\n");
     printf("%d LINHAS\n",cont);
     fclose(arq);
-    free(arq);
     return 0;
 }
