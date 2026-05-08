@@ -4,8 +4,13 @@
 int main()
 {
     int x, cont = 1;
-    FILE *arq = fopen("arquivo4.txt","r");
-    while((x=fgetc(arq))!=EOF)
+    FILE *arq = fopen("arquivo4.txt","r"); //o arquivo já deve existir
+    if (arq==NULL)
+    {
+        printf("O arquivo nao existe, por favor crie-o antes de executar o programa");
+        return 1;
+    }
+    while((x=fgetc(arq))!= EOF)
     {
         printf("%c",(char)x);
         if(x == '\n') cont++;
