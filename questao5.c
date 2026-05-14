@@ -8,7 +8,7 @@ int main()
     int x, y;
     if (arq1==NULL || arq2==NULL)
     {
-        printf("O arquivo não existe, pçor favor crie-o antes de executar o programa");
+        printf("O arquivo não existe, por favor crie-o antes de executar o programa");
         return 1;
     }
     while((x=fgetc(arq1))!=EOF)
